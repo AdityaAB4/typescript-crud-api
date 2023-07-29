@@ -53,6 +53,9 @@ const StartServer = () => {
 
     // Routes
     router.use('/authors', authorRoutes);
+    // Router.get('/all', auth, searchController.getAll);
+    // Router.post('/', auth, searchController.addOne);
+    // Router.delete('/:id', auth, searchController.deleteOne);
 
     // HealthCheck
     router.get('/ping', (req, res, next) => res.status(200).json({ message: 'pong' }));
